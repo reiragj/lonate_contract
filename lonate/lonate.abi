@@ -1,0 +1,450 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Nov 21 04:57:22 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "accountd",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "LWON_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "LOTY_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "comment_cnt",
+                    "type": "uint32"
+                },
+                {
+                    "name": "post_cnt",
+                    "type": "uint32"
+                },
+                {
+                    "name": "curate_cnt",
+                    "type": "uint32"
+                },
+                {
+                    "name": "social_power",
+                    "type": "uint64"
+                },
+                {
+                    "name": "tot_donation",
+                    "type": "uint64"
+                },
+                {
+                    "name": "vote_power",
+                    "type": "float32"
+                },
+                {
+                    "name": "last_vote",
+                    "type": "uint32"
+                },
+                {
+                    "name": "grade",
+                    "type": "int8"
+                }
+            ]
+        },
+        {
+            "name": "ccomment",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "coffer",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "comment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "context",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "curate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "offer_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "deleterecord",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "deposit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "donate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "expire",
+            "base": "",
+            "fields": [
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "fulfill",
+            "base": "",
+            "fields": [
+                {
+                    "name": "requestor",
+                    "type": "name"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "context",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "fulfillment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "fulfillid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "requestor",
+                    "type": "name"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "context",
+                    "type": "string"
+                },
+                {
+                    "name": "created",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "offer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "subject",
+                    "type": "string"
+                },
+                {
+                    "name": "context",
+                    "type": "string"
+                },
+                {
+                    "name": "category",
+                    "type": "string"
+                },
+                {
+                    "name": "pictures",
+                    "type": "string"
+                },
+                {
+                    "name": "endtime",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "procomment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "commentid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "context",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "profferg",
+            "base": "",
+            "fields": [
+                {
+                    "name": "offerid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "offer_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "target_balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "context",
+                    "type": "string"
+                },
+                {
+                    "name": "subject",
+                    "type": "string"
+                },
+                {
+                    "name": "category",
+                    "type": "string"
+                },
+                {
+                    "name": "pictures",
+                    "type": "string"
+                },
+                {
+                    "name": "curated",
+                    "type": "float32"
+                },
+                {
+                    "name": "offer_power",
+                    "type": "float32"
+                },
+                {
+                    "name": "success",
+                    "type": "uint8"
+                },
+                {
+                    "name": "created",
+                    "type": "uint32"
+                },
+                {
+                    "name": "endtime",
+                    "type": "uint32"
+                },
+                {
+                    "name": "state",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "requestexec",
+            "base": "",
+            "fields": [
+                {
+                    "name": "",
+                    "type": "name"
+                },
+                {
+                    "name": "offer_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "purpose",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "version",
+            "base": "",
+            "fields": []
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "ccomment",
+            "type": "ccomment",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "coffer",
+            "type": "coffer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "comment",
+            "type": "comment",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "curate",
+            "type": "curate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleterecord",
+            "type": "deleterecord",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deposit",
+            "type": "deposit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "donate",
+            "type": "donate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "expire",
+            "type": "expire",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "fulfill",
+            "type": "fulfill",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "offer",
+            "type": "offer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "requestexec",
+            "type": "requestexec",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "version",
+            "type": "version",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accountd",
+            "type": "accountd",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "fulfillment",
+            "type": "fulfillment",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "procomment",
+            "type": "procomment",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "profferg",
+            "type": "profferg",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
